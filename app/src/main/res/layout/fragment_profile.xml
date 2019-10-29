@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fragment_background"
+        android:layout_margin="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorAccent"
+            android:src="@android:drawable/gallery_thumb" />
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:fontFamily="@font/nunito_semibold"
+            android:layout_below="@id/profile_image"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:text="Loading User Name" />
+
+        <Button
+            android:id="@+id/log_out_button"
+            android:background="@drawable/primary_clr_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@color/textTabBright"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:text="Logout the Account" />
+
+    </RelativeLayout>
+
+</FrameLayout>
